@@ -1,0 +1,143 @@
+body{
+    background: #b9dae7d2;;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.template{
+    background:rgba(245, 245, 245, 0.936);
+    flex-direction: column;
+    min-width: 45vw;
+    width: fit-content;
+    height: fit-content;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    border-radius: 8px;
+
+
+}
+.template h1{
+    justify-content: flex-start;
+    display: flex;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    
+
+
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.quescontainer{
+    height: 18%;
+}
+ h2{
+    margin-bottom: 30px;
+    color:rgb(2, 47, 109);
+}
+.line{
+    border-top: 2px solid rgb(4, 76, 118);
+
+}
+
+.answerbuttons{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.answerbuttons .btn{
+    margin-bottom: 2vh;
+    padding: 2vh;
+    width: 45rem;
+    height: 2.5rem;
+    cursor: pointer;
+    color:rgb(5, 56, 124);
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 1rem;
+   background-color: whitesmoke;
+    box-shadow: 0 0 5px grey;
+    border: none;
+    
+}
+.answerbuttons .btn:hover{
+    scale: 1.02;
+}
+.answerbuttons .btn:focus{
+    display: none;
+}
+
+ .correct{
+    background-color: rgba(185, 250, 185, 0.63) !important;
+ }
+
+ .wrong{
+    background-color: rgb(245, 138, 138) !important;
+ }
+ #quesno{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#072744d2;
+    font-size: medium;
+ }
+ .template p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#073a6dd2;
+    font-size: medium;
+    font-weight: bold;
+
+ } 
+ .controls{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    color: rgb(0, 43, 128);
+    margin-top: 15px;
+    margin-bottom: 5px;
+ }
+ .controls #nextbtn{
+    color: rgb(0, 64, 128);
+    padding:7px 11px 7px 11px;
+    background-color: rgba(237, 238, 238, 0.427);
+    border: none;
+    box-shadow: 0 0 5px rgb(1, 68, 126);
+    border-radius: 5px;
+    font-weight: bold;
+
+ }
+ .controls #nextbtn:hover{
+    scale: 1.05;
+ }
+ 
+ .controls #nextbtn:disabled{
+    background-color: rgba(205, 195, 195, 0.904);
+ }
+
+ .controls #submitbtn{
+    color: rgb(0, 64, 128) ;
+    padding:7px 11px 7px 11px;
+    background-color: rgba(245, 245, 245, 0.195);
+    border: none;
+    box-shadow: 0 0 5px rgb(1, 68, 126);
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ .controls #submitbtn:hover{
+    scale: 1.05;
+ }
+ .controls #submitbtn:disabled{
+   background-color: cadetblue;
+}
+

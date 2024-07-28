@@ -1,0 +1,47 @@
+body
+{
+    background: linear-gradient(90deg, #b9deed, #efefef);
+}
+.congrat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 8rem;
+    color: #7d1251;
+   font-family:Raleway;
+
+    margin-bottom:3rem;
+
+}
+p{
+    color: #8d145a;
+    
+    font-size: 2rem;
+    color: #7d1251;
+   font-family:Raleway;
+    margin-bottom:3rem;
+
+
+}
+.restart{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 15rem;
+    text-align: center;
+    border: 0.1rem solid #d3769d;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #a94775;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 9px;
+    cursor: pointer;
+
+  
+
+}
+.restart:hover{
+    box-shadow: 0 0 10px palevioletred;
+}
