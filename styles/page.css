@@ -140,4 +140,13 @@ body{
  .controls #submitbtn:disabled{
    background-color: cadetblue;
 }
+.timer {
+   font-size: 2em;
+   font-weight: bold;
+   display: flex;
+  
+   color: rgb(7, 66, 169);
+   margin-bottom: auto;
+   padding: 9px;
 
+ }
