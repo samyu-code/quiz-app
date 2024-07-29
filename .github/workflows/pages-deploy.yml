@@ -1,0 +1,42 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v1
+
+      - name: Build
+        run: |
+          # Add your build commands here if needed
+          echo "Building the website..."
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./  # Adjust this path to the location of your built site files
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
